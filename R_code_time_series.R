@@ -17,3 +17,15 @@ ls()
 rlist <- list.files(pattern="lst")
 rlist
 import <- lapply(rlist, raster)
+import
+TGr <- stack(import)
+TGr
+plot (TGr)
+
+plotRGB(TGr,r=1, g=2, b=3, stretch=Lin)
+plotRGB(TGr, 2, 3, 4, stretch="Lin")
+#differenza
+dift <- TGr[[2]] - TGr[[1]]
+plot(dift)
+cl <- colorRampPalette(c("blue","light blue","pink","red"))(100)
+plot(TGr, col=cl)
