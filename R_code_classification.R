@@ -47,6 +47,6 @@ total
 percentages = frequencies * 100 /  total    
 percentages
 
-
+install.packages("ggplot2")
 
 
