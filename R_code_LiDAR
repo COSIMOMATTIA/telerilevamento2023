@@ -1,0 +1,5 @@
+library(raster) #"Geographic Data Analysis and Modeling"
+library(rgdal) #"Geospatial Data Abstraction Library"
+library(viridis)
+library(ggplot2)
+setwd("C:/lab/dati/")
