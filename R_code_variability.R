@@ -42,8 +42,8 @@ geom_raster(sd3d, mapping =aes(x=x, y=y, fill=layer)) +
 scale_fill_viridis(option = "inferno") +
 ggtitle("Standard deviation by viridis package")
 
-p1 + p2   #plot65
-
+p1 + p2   
+# plot con viridis 
 nird <- as.data.frame(nir, xy=T)  
 p3 <- ggplot()+
 geom_raster(nird, mapping =aes(x=x, y=y, fill=sentinel_1)) +
