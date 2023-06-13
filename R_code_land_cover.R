@@ -9,7 +9,7 @@ plotRGB(defor2, r=1, g=2, b=3, stretch="lin")
 par(mfrow=c(2,1))
 plotRGB(defor1, r=1, g=2, b=3, stretch="lin")
 plotRGB(defor2, r=1, g=2, b=3, stretch="lin")
-
+#classificazione non guidata
 singlenr1 <- getValues(defor1)
 singlenr1
 kcluster1 <- kmeans(singlenr1, centers = 2)
