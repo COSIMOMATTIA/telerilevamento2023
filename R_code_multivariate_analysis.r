@@ -3,11 +3,12 @@ setwd("C:/lab/")
 sen <- brick("sentinel.png")
 sen
 plot(sen)
-sen2 <- stack(sen[[1]], sen[[2]], sen[[3]])
+sen2 <- stack(sen[[1]], sen[[2]], sen[[3]]) 
 plot(sen2)
 pairs(sen2)
 sample <- sampleRandom(sen2, 10000)
 sample
+# pricipal component analisis 
 pca <- prcomp(sample)
 pca
 summary(pca)
@@ -17,7 +18,7 @@ pci <- predict(sen2, pca, index=c(1:2))
 pci
 plot(pci[[1]])
 
-
+# ggplot per grafici e viridis 
 library(ggplot2)
 library(viridis)
 ggplot() +
