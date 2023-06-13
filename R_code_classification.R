@@ -28,6 +28,8 @@ percentages
 library(raster)
 setwd("C:/lab/")
 
+#gran canyon
+
 gc <- brick("dolansprings_oli_2013088_canyon_lrg.jpg")
 gc
 plotRGB(gc, 1,2,3, stretch="Lin")
@@ -40,6 +42,9 @@ kcluster <- kmeans(singlenr, centers=3)
 kcluster
 gcclass <- setValues(gcc[[1]], kcluster$cluster)
 plot(gcclass)
+# class 1: rocce vulcaniche 
+# class 2: sedimentarie
+# class 3: conglomerati 
 frequencies <- freq(gcclass)
 frequencies
 total=ncell (gcclass)
