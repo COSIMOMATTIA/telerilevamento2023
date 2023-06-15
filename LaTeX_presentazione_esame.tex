@@ -1,0 +1,183 @@
+\documentclass[10pt,aspectratio=169]{beamer}
+\usepackage{poly}
+
+\title{Analisi dell'incendo avvenuto nel 2017 all'interno del parco Nazionale del Vesuvio}
+%\subtitle{Using \LaTeX\ to prepare slides}
+\author{Cosimo Mattia Scarpato}
+\date{16/06/23}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduzione}
+
+\begin{frame}{Telerilevamento Geo-ecologico}{\thesection \, \secname}
+\begin{itemize}
+\item In quest'elaborato si analizzano i danni subiti dalla vegetazione del parco Nazionale del Vesuvio a causa di un incendio doloso avvenuto nel 2017, confrontando lo stato di salute della vegetazione prima e dopo il disastro 
+\end{itemize}
+\end{frame}
+
+
+
+
+
+\section{Metodi ed Analisi}
+
+\begin{frame}[fragile]{Telerilevamento Geo-ecologico}
+Metodi utilizzati:
+\begin{itemize}
+\item Download data set Copernicus
+\item Elaborazione in Qgis 
+\item Software per il telerilevamento R
+\item Visuallizzazione delle immagini in RGB colori naturali e falsi colori 
+\item Immagini satellitari Sentinel 2 
+\item Indice di vegetazione NDVI, indice di bruciatura NBR
+
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Telerilevamento Geo-ecologico}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{vesuvio16.JPG}
+	\caption{Prima visualizzazione dell'area in colori naturali 
+ RGB 4, 3, 2 (2016)}
+	\label{fig1}
+\end{figure}
+\end{frame}
+\begin{frame}[fragile]{Telerilevamento Geo-ecologico}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{vesuvio17.JPG}
+	\caption{Prima visualizzazione dell'area in colori naturali 
+ RGB 4, 3, 2 (2017)}
+	\label{fig1}
+\end{figure}
+\end{frame}
+\begin{frame}[fragile]{Telerilevamento Geo-ecologico}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{vesuvio23.JPG}
+	\caption{Prima visualizzazione dell'area in colori naturali 
+ RGB 4, 3, 2 (2023)}
+	\label{fig1}
+\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Telerilevamento Geo-ecologico}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{vesuvio2016.JPG}
+	\caption{Visualizzazione dell'area in falsi colori  
+ RGB 8, 4, 3 (2016)}
+	\label{fig1}
+\end{figure}
+\end{frame}
+\begin{frame}[fragile]{Telerilevamento Geo-ecologico}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{vesuvio2017.JPG}
+	\caption{Visualizzazione dell'area in falsi colori  
+ RGB 8, 4, 3 (2017)}
+	\label{fig1}
+\end{figure}
+\end{frame}
+\begin{frame}[fragile]{Telerilevamento Geo-ecologico}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{vesuvio2023.JPG}
+	\caption{Visualizzazione dell'area in falsi colori  
+ RGB 8, 4, 3 (2023)}
+	\label{fig1}
+\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Telerilevamento Geo-ecologico}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{DVI.jpg}
+	\caption{Confronto tra i DVI dei tre anni diversi, per mettere in risalto la quantità di vegetazione}
+	\label{fig1}
+\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Telerilevamento Geo-ecologico}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{NDVI.jpg}
+	\caption{Confronto tra gli NDVI dei tre anni diversi, per quantificare lo stato di salute della vegetazione}
+	\label{fig1}
+\end{figure}
+\end{frame} 
+
+\begin{frame}[fragile]{Telerilevamento Geo-ecologico}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{DVI1617.jpg}
+	\caption{Differenza dei valori del DVI tra gli anni 2016 e 2017}
+	\label{fig1}
+\end{figure}
+\end{frame} 
+
+\begin{frame}[fragile]{Telerilevamento Geo-ecologico}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{DVI2317.jpg}
+	\caption{Differenza dei valori del DVI tra gli anni 2023 e 2017}
+	\label{fig1}
+\end{figure}
+\end{frame} 
+
+\begin{frame}[fragile]{Telerilevamento Geo-ecologico}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\textwidth]{nbr2016.jpg}
+	\caption{Indice di bruciatura nell'anno 2016 (pre incendio)}
+	\label{fig1}
+\end{figure}
+\end{frame} 
+
+\begin{frame}[fragile]{Telerilevamento Geo-ecologico}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\textwidth]{nbr2017.jpg}
+	\caption{Indice di bruciatura nell'anno 2017 (post incendio)}
+	\label{fig1}
+\end{figure}
+\end{frame} 
+
+
+\section{Conclusioni}
+
+\begin{frame}
+\frametitle{Telerilevamento Geo-ecologico}
+In conclusione, le analisi effettuate hanno permesso di determinare che:
+\begin{itemize}
+    \item La zona che ha subito il maggior numero di danni è quella a sud del cratere 
+    \item Dopo sei anni la vegetazione è quasi del tutto ricreciuta 
+\end{itemize}
+
+\end{frame}
+
+
+
+
+
+
+%\backmatter
+
+\end{document}
